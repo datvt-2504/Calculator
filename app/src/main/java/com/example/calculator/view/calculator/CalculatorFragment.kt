@@ -16,10 +16,6 @@ class CalculatorFragment : BaseFragment(R.layout.fragment_calculator2), View.OnC
         initOnClick()
     }
 
-    override fun onBackPress(): Boolean {
-        return true
-    }
-
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.button0 -> numberOnClick(getString(R.string.zero))
